@@ -1,11 +1,12 @@
 exports.handler = async (event) => {
-  console.log("HIIIIIIIIIIIIIIII");
-  console.log(`The event is ${JSON.stringify(event)}`);
   let body = JSON.parse(event.body);
+  console.log(`The body is ${JSON.stringify(body)}`);
   const fetch = require('node-fetch');
   const jbuilder = require('jbuilder');
   var bugsnagError = body.error;
   var bugsnagProject = body.project;
+
+  console.log(`kind ${body.kind}`);
 
   // var messageBody = jbuilder.encode(function (json) {
   //   json.set('cards', function (json) {
