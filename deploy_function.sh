@@ -1,7 +1,7 @@
 set -e
 set -x
 
-if [[ -e botkube_hangouts_function.zip ]]; then
+if [ -e botkube_hangouts_function.zip ]; then
     rm botkube_hangouts_function.zip
 fi
 
